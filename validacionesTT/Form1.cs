@@ -79,22 +79,22 @@ namespace validacionesTT
             MessageBox.Show("Datos agregados correctamnte", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("¿Está seguro que desea cerrar la aplicación",
-               "Info", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    DialogResult dr = MessageBox.Show("¿Está seguro que desea cerrar la aplicación",
+        //       "Info", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (dr == DialogResult.No)
-            {
-                txtNombre.Focus();
-            }
-            else
-            {
+        //    if (dr == DialogResult.No)
+        //    {
+        //        txtNombre.Focus();
+        //    }
+        //    else
+        //    {
 
-                this.Close();
+        //        this.Close();
 
-            }
-        }
+        //    }
+        //}
 
     }
 }
