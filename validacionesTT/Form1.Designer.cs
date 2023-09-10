@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gbDatos = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.txtDescr = new System.Windows.Forms.TextBox();
             this.lblDescr = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.gbDatos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +67,17 @@
             this.gbDatos.TabIndex = 1;
             this.gbDatos.TabStop = false;
             this.gbDatos.Text = "Ingrese Datos";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(520, 285);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 48);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnEnviar
             // 
@@ -140,9 +151,10 @@
             // lklSalir
             // 
             this.lklSalir.AutoSize = true;
+            this.lklSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lklSalir.Location = new System.Drawing.Point(597, 18);
             this.lklSalir.Name = "lklSalir";
-            this.lklSalir.Size = new System.Drawing.Size(34, 16);
+            this.lklSalir.Size = new System.Drawing.Size(51, 25);
             this.lklSalir.TabIndex = 3;
             this.lklSalir.TabStop = true;
             this.lklSalir.Text = "Salir";
@@ -179,17 +191,6 @@
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(520, 285);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 48);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -197,7 +198,7 @@
             this.ClientSize = new System.Drawing.Size(681, 374);
             this.Controls.Add(this.gbDatos);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Validaciones";
             this.gbDatos.ResumeLayout(false);
             this.gbDatos.PerformLayout();
             this.ResumeLayout(false);
